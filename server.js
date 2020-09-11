@@ -12,8 +12,14 @@ require('dotenv').config()
 const server = express()
 connectDB()
 
+const corsOption = {
+  origin: '*',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+}
+
 server.use(helmet())
-server.use(cors())
 server.use(morgan('dev'))
 server.use(express.json())
 

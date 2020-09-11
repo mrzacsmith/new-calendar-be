@@ -2,6 +2,8 @@
 
 Thank you for taking the interest and time to contribute to this open source project.
 
+- Return to the [README](https://github.com/mrzacsmith/new-calendar-be/blob/master/README.md)
+
 ## Getting Started
 
 ## Community
