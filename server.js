@@ -5,6 +5,8 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 const connectDB = require('./utils/db.js')
 
+const DayRouter = require('./routes/days.js')
+
 require('dotenv').config()
 
 const server = express()
@@ -18,6 +20,8 @@ server.use(express.json())
 server.get('/test', (req, res) => {
   res.send(`New calendar data server is running on /test`)
 })
+
+server.use('/days', DayRouter)
 
 const PORT = process.env.PORT || 4000
 
