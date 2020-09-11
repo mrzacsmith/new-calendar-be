@@ -23,6 +23,11 @@ server.use(helmet())
 server.use(morgan('dev'))
 server.use(express.json())
 
+server.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*')
+  next
+})
+
 server.get('/api/v1/test', (req, res) => {
   res.send(`New calendar data server is running on /test`)
 })
