@@ -10,11 +10,25 @@
 
 ## Tech / Framework
 
-Built with
+### Built with
 
 - NodeJs
 - ExpressJS
 - MongoDB
+
+### Dependencies
+
+- express
+- morgan
+- mongoose
+- chalk
+- cors
+- helmet
+
+### Dev-dependencies
+
+- nodemon
+- dotenv
 
 ## Features
 
