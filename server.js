@@ -4,6 +4,7 @@ const helmet = require('helmet')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const connectDB = require('./utils/db.js')
+const chalk = require('chalk')
 
 const DayRouter = require('./routes/days.js')
 
@@ -48,5 +49,7 @@ server.use('/api/v1/days', DayRouter)
 const PORT = process.env.PORT || 4000
 
 server.listen(PORT, () => {
-  console.log(`\n** Server is listen on port ${PORT}`)
+  console.log(
+    chalk.yellow(`\n***`) + chalk.green(` Server is listen on port ${PORT}`)
+  )
 })

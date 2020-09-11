@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const chalk = require('chalk')
 
 const connectDB = async () => {
   try {
@@ -7,7 +8,10 @@ const connectDB = async () => {
       useCreateIndex: true,
       useUnifiedTopology: true,
     })
-    console.log(`MongoDB Connected: ${connect.connection.host}`)
+    console.log(
+      chalk.yellow(`***`) +
+        chalk.green(` MongoDB Connected: ${connect.connection.host}\n`)
+    )
   } catch (err) {
     console.log(err)
     process.exit(1)
