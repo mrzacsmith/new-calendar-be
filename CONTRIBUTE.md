@@ -26,7 +26,7 @@ For example:
 
 Pull Requests are always welcome.
 
-When you edit the code, please run npm run test to check the formatting of your code before you git commit.
+When you edit the code, please run `npm run test` to check the formatting of your code before you `git commit`.
 Ensure the PR description clearly describes the problem and solution. It should include:
 
 - what to include here
