@@ -4,7 +4,7 @@ const Day = require('../models/Days.js')
 // @desc:   Test route to confirm server is working
 // @route:  GET /test
 router.get('/test', (req, res) => {
-  res.send(`Day test route is working`)
+  res.send(`Day test route is running on /api/v1/days/test`)
 })
 
 // @desc:   Get all days information

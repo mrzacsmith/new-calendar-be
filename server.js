@@ -17,11 +17,11 @@ server.use(cors())
 server.use(morgan('dev'))
 server.use(express.json())
 
-server.get('/test', (req, res) => {
+server.get('/api/v1/test', (req, res) => {
   res.send(`New calendar data server is running on /test`)
 })
 
-server.use('/days', DayRouter)
+server.use('/api/v1/days', DayRouter)
 
 const PORT = process.env.PORT || 4000
 
