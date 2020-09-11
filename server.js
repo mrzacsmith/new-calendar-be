@@ -28,15 +28,19 @@ server.use((req, res, next) => {
   next()
 })
 
+let currentTime = new Date().toLocaleString()
+
 server.get('/', (req, res) => {
   res.json({
     status: 'Success',
     message: 'Server is live',
+    date: currentTime,
+    author: 'Github: @MrZacSmith',
   })
 })
 
 server.get('/api/v1/test', (req, res) => {
-  res.send(`New calendar data server is running on /test`)
+  res.send(`New calendar data server is running on /test at ${currentTime}`)
 })
 
 server.use('/api/v1/days', DayRouter)
