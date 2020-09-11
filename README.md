@@ -36,7 +36,7 @@ Installation is simple, fork or clone this repository:
 
 ## Contribute
 
-Want to contribute? See the [CONTRIBUTE]() documentation! Thanks for keeping open source strong!
+Want to contribute? See the [CONTRIBUTE](https://github.com/mrzacsmith/new-calendar-be/blob/master/CONTRIBUTE.md) documentation! Thanks for keeping open source strong!
 
 ## Credits
 

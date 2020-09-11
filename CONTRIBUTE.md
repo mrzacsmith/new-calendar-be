@@ -8,7 +8,7 @@ Thank you for taking the interest and time to contribute to this open source pro
 
 ## Issues
 
-Ensure the bug was not already reported by searching on GitHub under [issue](). If you're unable to find an open issue addressing the bug, open a new [issue]().
+Ensure the bug was not already reported by searching on GitHub under [issue](https://github.com/mrzacsmith/new-calendar-be/issues). If you're unable to find an open issue addressing the bug, open a new [issue](https://github.com/mrzacsmith/new-calendar-be/issues/new).
 
 ### Write detailed information
 
