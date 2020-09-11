@@ -25,7 +25,14 @@ server.use(express.json())
 
 server.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')
-  next
+  next()
+})
+
+server.get('/', (req, res) => {
+  res.json({
+    status: 'Success',
+    message: 'Server is live',
+  })
 })
 
 server.get('/api/v1/test', (req, res) => {
