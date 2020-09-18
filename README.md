@@ -2,29 +2,41 @@
 
 ## Motivation
 
+As a Team Lead at Lambda School, we meet all kinds of unique and amazing people. The creator of the New Calendar is Tom Sherman (Class of 35, Web). He added the 5th season of the year and modified the calendar so that it works with modern understanding that was not available. 
+
 ## Build Status
 
 ## Code style
 
-## Screenshots
-
 ## Tech / Framework
 
-Built with
+Stack
 
 - NodeJs
 - ExpressJS
 - MongoDB
+- Heroku
+
+Dependencies
+
+- express
+- cors
+- mongoose
+- dotenv
+- helmet
+- morgan
+
+Dev-dependencies
+
+- nodemon
 
 ## Features
-
-## Code Example
 
 ## Installation
 
 Installation is simple, fork or clone this repository:
 
-- `git clonse URL`
+- `git clone URL`
 - `cd NAME`
 - `npm install`
 
