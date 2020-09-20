@@ -44,6 +44,8 @@ Installation is simple, fork or clone this repository:
 
 ## API Reference
 
+Complete [API documentation](https://app.swaggerhub.com/apis-docs/mrzacsmith/new-calendar/0.1)!
+
 ## Tests
 
 ## How to use?
