@@ -22,10 +22,10 @@ router.get('/', (req, res) => {
 // @route:  POST /add
 router.post('/add', (req, res) => {
   const newDay = new Day({
-    _id: req.body._id,
+    day: req.body.day,
     seasonIn: req.body.seasonIn,
     monthIn: req.body.monthIn,
-    day: req.body.day,
+    nDay: req.body.nDay,
     holiday: req.body.holiday,
     birthday: req.body.birthday,
   })

@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 
 const DaySchema = new mongoose.Schema(
   {
-    _id: { type: Number, required: true, unique: true },
-    day: { type: String, required: true },
+    day: { type: Number, required: true, unique: true },
+    nDay: { type: Number, required: true },
     seasonIn: { type: String, required: true },
     monthIn: { type: String, required: true },
     holiday: { type: String, trim: true },
