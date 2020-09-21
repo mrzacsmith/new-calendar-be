@@ -7,7 +7,7 @@ const daysObj = [{ _id: 0 }]
 const newCalendar = (DAYS) => {
   // const DAYS = 150
 
-  for (let id = 32; id <= DAYS; id++) {
+  for (let id = 1; id <= DAYS; id++) {
     let season = ''
     let day = 1
     if (id < 74) {
@@ -22,7 +22,7 @@ const newCalendar = (DAYS) => {
       season = 'fall'
     }
 
-    dayW = id % 74 == 0 ? 1 : id % 74
+    dayW = id % 73 == 0 ? 73 : id % 73
 
     daysObj[id] = {
       _id: id,
@@ -34,6 +34,6 @@ const newCalendar = (DAYS) => {
   return daysObj
 }
 
-console.log(newCalendar(120))
+console.log(newCalendar(365))
 
 module.exports = daysObj
