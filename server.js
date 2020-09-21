@@ -29,13 +29,15 @@ server.use((req, res, next) => {
   next()
 })
 
-let currentTime = new Date().toLocaleString()
+let currentTime = new Date().toLocaleString('en-US', {
+  timeZone: 'America/Denver',
+})
 
 server.get('/', (req, res) => {
   res.json({
     status: 'Success',
     message: 'Server is live',
-    date: currentTime,
+    date: currentTime + ' MST',
     author: 'Github: @MrZacSmith',
   })
 })
