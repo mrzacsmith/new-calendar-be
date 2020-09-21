@@ -6,7 +6,8 @@ const DaySchema = new mongoose.Schema(
     day: { type: String, required: true },
     seasonIn: { type: String, required: true },
     monthIn: { type: String, required: true },
-    holiday: { type: String },
+    holiday: { type: String, trim: true },
+    birthday: { type: String, trim: true },
   },
   {
     timestamps: true,
