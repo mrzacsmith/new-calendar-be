@@ -15,7 +15,7 @@ router.get('/test', (req, res) => {
 // @desc:   Get all days information
 // @route:  GET /
 router.get('/', (req, res) => {
-  Day.find()
+  Day.find(req.query)
     .then((days) => res.json(days))
     .catch((err) => res.status(400).json(`Error: ${err}`))
 })
