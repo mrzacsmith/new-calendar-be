@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
 
 // @desc:   Create new day
 // @route:  POST /add
-router.post('/add', (req, res) => {
+router.post('/', (req, res) => {
   console.log(req.query.data)
   if (req.query.data == process.env.DATA) {
     const newDay = new Day({

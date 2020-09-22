@@ -62,7 +62,7 @@ Advanced queries can chaing together like `days/?monthIn=late&seasonIn=winter`
 | :-------- | :--- | :--------- | :----------------------- |
 | GET       | /    | `?day=1`   | returns day = 1          |
 | GET       | /:id |            | returns document by \_id |
-| POST      | /add | authorized | adds new day             |
+| POST      | /    | authorized | adds new day             |
 | PATCH     | /:id | authorized | modifies day by \_id     |
 | DELETE    | /:id | authorized | deletes day by \_id      |
 
