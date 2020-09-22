@@ -1,5 +1,4 @@
 ;[
-  { day: 0 },
   { day: 1, nDay: 1, seasonIn: 'winter', monthIn: 'early' },
   { day: 2, nDay: 2, seasonIn: 'winter', monthIn: 'early' },
   { day: 3, nDay: 3, seasonIn: 'winter', monthIn: 'early' },
