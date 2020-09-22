@@ -45,8 +45,7 @@ Complete [API documentation](https://app.swaggerhub.com/apis-docs/mrzacsmith/new
 
 ## How to use?
 
-Search by param `days?query=xx`
-Options:
+Search by query `days?query=xx`
 
 - day = Number 1 - 365
 - nDay = Number 1 - 73
@@ -59,7 +58,7 @@ Advanced queries can chaing together like `days/?monthIn=late&seasonIn=winter`
 
 ### /api/v1/days
 
-| HTTP Verb | URI  | Params     | Data                     |
+| HTTP Verb | URI  | Query      | Data                     |
 | :-------- | :--- | :--------- | :----------------------- |
 | GET       | /    | `?day=1`   | returns day = 1          |
 | GET       | /:id |            | returns document by \_id |
