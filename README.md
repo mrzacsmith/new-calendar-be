@@ -2,26 +2,17 @@
 
 ## Motivation
 
-As a Team Lead at Lambda School, we meet all kinds of unique and amazing people. The creator of the New Calendar is Tom Sherman (Class of 35, Web). He added the 5th season of the year and modified the calendar so that it works with modern understanding that was not available. 
-
-## Build Status
-
-## Code style
+As a Team Lead at Lambda School, we meet all kinds of unique and amazing people. The creator of the New Calendar is Tom Sherman (Class of 35, Web). He added the 5th season of the year and modified the calendar so that it works with modern understanding that was not available.
 
 ## Tech / Framework
 
-<<<<<<< HEAD
 ### Built with
-=======
-Stack
->>>>>>> f218df0df5d150f0fa7321e6c979e1fe2d400645
 
 - NodeJs
 - ExpressJS
 - MongoDB
 - Heroku
 
-<<<<<<< HEAD
 ### Dependencies
 
 - express
@@ -35,22 +26,6 @@ Stack
 
 - nodemon
 - dotenv
-
-## Features
-=======
-Dependencies
-
-- express
-- cors
-- mongoose
-- dotenv
-- helmet
-- morgan
->>>>>>> f218df0df5d150f0fa7321e6c979e1fe2d400645
-
-Dev-dependencies
-
-- nodemon
 
 ## Features
 
@@ -69,6 +44,28 @@ Complete [API documentation](https://app.swaggerhub.com/apis-docs/mrzacsmith/new
 ## Tests
 
 ## How to use?
+
+Search by param `days?query=xx`
+Options:
+
+- day = Number 1 - 365
+- nDay = Number 1 - 73
+- seasonIn = winter, spring, summer, autumn, fall
+- monthIn = early, mid, late
+- holiday = PENDING
+- birthday = PENDING
+
+Advanced queries can chaing together like `days/?monthIn=late&seasonIn=winter`
+
+### /api/v1/days
+
+| HTTP Verb | URI  | Params     | Data                     |
+| :-------- | :--- | :--------- | :----------------------- |
+| GET       | /    | `?day=1`   | returns day = 1          |
+| GET       | /:id |            | returns document by \_id |
+| POST      | /add | authorized | adds new day             |
+| PATCH     | /:id | authorized | modifies day by \_id     |
+| DELETE    | /:id | authorized | deletes day by \_id      |
 
 ## Contribute
 
