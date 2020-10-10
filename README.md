@@ -108,7 +108,7 @@ Search by query `days?query=xx`
 - holiday = PENDING
 - birthday = PENDING
 
-Advanced queries can chaing together like `days/?monthIn=late&seasonIn=winter`
+Advanced queries can chaining together like `days/?monthIn=late&seasonIn=winter`
 
 ### /api/v1/days
 
