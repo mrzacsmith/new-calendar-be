@@ -5,8 +5,6 @@ const keysArr = ['_id', 'seasonIn', 'monthIn']
 const daysObj = [{ _id: 0 }]
 
 const newCalendar = (DAYS) => {
-  // const DAYS = 150
-
   for (let id = 1; id <= DAYS; id++) {
     let season = ''
     let day = 1
@@ -25,10 +23,12 @@ const newCalendar = (DAYS) => {
     dayW = id % 73 == 0 ? 73 : id % 73
 
     daysObj[id] = {
-      _id: id,
-      day: dayW,
+      day: id,
+      nDay: dayW,
       seasonIn: season,
       monthIn: dayW < 37 ? 'early' : dayW == 37 ? 'mid' : 'late',
+      timestamp: Date.now() + id,
+      gregDay: '',
     }
   }
   return daysObj
