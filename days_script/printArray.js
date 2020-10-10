@@ -9,9 +9,4 @@ const storeData = (data, path) => {
   }
 }
 
-const obj = {
-  name: 'zac',
-  job: 'great',
-}
-
-storeData(daysObj, './test.json')
+storeData(daysObj, './new-calendar-data.json')
