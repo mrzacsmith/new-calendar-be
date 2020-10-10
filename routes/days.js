@@ -15,9 +15,19 @@ router.get('/test', (req, res) => {
 // @desc:   Get all days information
 // @route:  GET /
 router.get('/', (req, res) => {
-  Day.find(req.query)
-    .then((days) => res.json(days))
-    .catch((err) => res.status(400).json(`Error: ${err}`))
+  Day.find(req.query, (err, data) => {
+    if (err) {
+      res.status(500).send(err)
+    } else {
+      data.sort((b, a) => {
+        return b.day - a.day
+      })
+      res.status(200).send(data)
+    }
+  })
+  // Day.find(req.query)
+  //   .then((days) => res.json(days))
+  //   .catch((err) => res.status(400).json(`Error: ${err}`))
 })
 
 // @desc:   Create new day
