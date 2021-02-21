@@ -3,6 +3,7 @@ const cors = require('cors')
 const helmet = require('helmet')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
+const RateLimit = require('express-rate-limit')
 const connectDB = require('./utils/db.js')
 const chalk = require('chalk')
 
@@ -19,6 +20,13 @@ const corsOption = {
   preflightContinue: false,
   optionsSuccessStatus: 204,
 }
+
+// Rate limit
+const limiter = new RateLimit({
+    windowMs: 15*60*1000,
+    max: 100,
+    delayMs: 0
+})
 
 server.use(helmet())
 server.use(morgan('dev'))
